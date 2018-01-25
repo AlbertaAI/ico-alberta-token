@@ -1,5 +1,50 @@
-# testnet 
-
+# migration
+```bash
+$ npm i
+$ truffle compile
+$ testrpc
+$ truffle migrate --network dev
+```
+# ABI
+Abi can be found in **build/contracts** directory. Pick a json file and find the **abi : []** section. Example:
+```json
+[
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "rate",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "endTime",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+]
+```
+# contract interaction
+open console
+```bash
+$ truffle console
+```
+Work with contract
 ```js
 //// get the account address: 
 account1 = web3.eth.accounts[1]
