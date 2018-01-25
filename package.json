@@ -1,0 +1,16 @@
+{
+  "name": "ico",
+  "version": "1.0.0",
+  "description": "some description",
+  "main": "truffle-config.js",
+  "dependencies": {
+    "truffle-hdwallet-provider": "0.0.3",
+    "zeppelin-solidity": "^1.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jn",
+  "license": "ISC"
+}
